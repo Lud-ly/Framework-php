@@ -2,23 +2,17 @@
 
 namespace Framework;
 
-use GuzzleHttp\Psr7\Response;
-use Psr\Http\Message\ResponseInterface;
-use Psr\Http\Message\ServerRequestInterface;
-
 
 class App {
 
-    public function run(ServerRequestInterface $request) : ResponseInterface{
+    public function run(){
 
-        $uri = $request->getUri()->getPath();
+        $uri = $_SERVER['REQUEST_URI'];
         if(!empty($uri) && $uri[-1] === "/"){
-            return (new Response())
-            ->withStatus(301)
-            ->withHeader('Location', substr($uri, 0,-1));
+            header('location:' . substr($uri, 0,-1));
+            header('HTTP/1.1 301 Moved Permanently');
+            exit();
         }
-        $response = new Response();
-        $response->getBody()->whrite('Bonjour les loulous');
-       return $response;
+        echo 'Bonjour les loulous';
     }
 }
