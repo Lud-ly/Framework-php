@@ -13,6 +13,6 @@ class App {
             header('HTTP/1.1 301 Moved Permanently');
             exit();
         }
-        echo 'Bonjour les loulous';
+        echo '§Hello les loulous';
     }
 }
