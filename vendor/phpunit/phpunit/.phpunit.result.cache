@@ -1,1 +1,1 @@
-{"version":1,"defects":{"Tests\\Framework\\AppTest::testRedirectTrailingSlash":4},"times":{"Tests\\Framework\\AppTest::testRedirectTrailingSlash":0.008}}
+{"version":1,"defects":{"Tests\\Framework\\AppTest::testRedirectTrailingSlash":3,"Tests\\Framework\\AppTest::testBlog":4,"Tests\\Framework\\AppTest::testError404":4},"times":{"Tests\\Framework\\AppTest::testRedirectTrailingSlash":0.022,"Tests\\Framework\\AppTest::testBlog":0.005,"Tests\\Framework\\AppTest::testError404":0}}
