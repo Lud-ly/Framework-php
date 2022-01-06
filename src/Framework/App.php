@@ -18,7 +18,7 @@ class App {
             ->withHeader('Location', substr($uri, 0,-1));
         }
         $response = new Response();
-        $response->getBody()->whrite('Bonjour les loulous');
+        $response->getBody()->whrite('Bonjour les loulous du PHP');
        return $response;
     }
 }
