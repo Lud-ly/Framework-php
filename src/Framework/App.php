@@ -13,6 +13,8 @@ class App {
             header('HTTP/1.1 301 Moved Permanently');
             exit();
         }
-        echo '§Hello les loulous';
+        $response = new Response();
+        $response->getBody()->whrite('Bonjour les loulous du PHP');
+       return $response;
     }
 }
